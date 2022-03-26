@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { savePersonalData } from './../utils/hashUtils';
+
 const KycForm = () => {
     const [data, setData] = useState({
         name: '',
@@ -9,6 +11,7 @@ const KycForm = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
+        savePersonalData(data);
     }
 
     const handleChange = (e)=> {

@@ -10,6 +10,7 @@ import Home from './components/Home';
 import KycForm from './components/KycForm';
 import DefenseOps from './components/DefenseOps';
 import UniversityOps from './components/UniversityOps';
+import CompleteMerkleTree from './components/MerkleTree';
 
 const App =()=>{
   return (
@@ -23,6 +24,9 @@ const App =()=>{
         </Route>
         <Route path='/university' exact>
           <UniversityOps />
+        </Route>
+        <Route path='/merkle' exact>
+          <CompleteMerkleTree />
         </Route>
         <Route path='/home' exact>
           <Home />
