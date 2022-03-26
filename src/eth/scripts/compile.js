@@ -2,10 +2,10 @@ const path = require('path');
 const fs = require('fs');
 const solc = require('solc');
 
-const CONTRACTS_PATH = "/Users/hy/Downloads/diva/eth/contracts";
+const CURR_DIR = __dirname;
 
-const universityContractPath = path.resolve(CONTRACTS_PATH, 'University.sol');
-const defenseContractPath = path.resolve(CONTRACTS_PATH, 'Defense.sol');
+const universityContractPath = path.resolve(CURR_DIR, '..', 'contracts', 'University.sol');
+const defenseContractPath = path.resolve(CURR_DIR, '..', 'contracts', 'Defense.sol');
  
 const univFile = fs.readFileSync(universityContractPath, 'utf8');
 const defenseFile = fs.readFileSync(defenseContractPath, 'utf8');
